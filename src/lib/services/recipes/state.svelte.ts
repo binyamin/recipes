@@ -1,4 +1,3 @@
-import { z } from 'zod';
 import { type Recipe, type RecipeInput, recipe, recipeInput } from './models';
 import { load, save } from './storage';
 
@@ -13,12 +12,11 @@ export let list = $state<Recipe[]>(load());
  * Save a new recipe
  * @param input The new recipe's data
  * @returns The id of the new recipe
- * @throws {z.ZodError}
  */
 export function create(input: RecipeInput): string {
 	const now = new Date();
 
-	const parsed = z.parse(recipe, {
+	const parsed = recipe.parse({
 		...input,
 		id: crypto.randomUUID(),
 		updatedAt: now,
@@ -46,13 +44,12 @@ export class RecipeNotFoundError extends Error {
  * Update an existing recipe
  * @param id The id of the recipe to update
  * @param input The updated data fields
- * @throws {RecipeNotFoundError | z.ZodError}
  */
 export function update(id: string, input: RecipeInput): void {
 	const idx = list.findIndex((v) => v.id === id);
 	if (!idx) throw new RecipeNotFoundError(id);
 
-	const parsed = z.parse(recipeInput, input);
+	const parsed = recipeInput.parse(input);
 	const data: Recipe = {
 		...parsed,
 		id,
