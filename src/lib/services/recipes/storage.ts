@@ -1,4 +1,5 @@
-import type { Recipe } from './models';
+import { type Recipe, recipe } from './models';
+import seed from './seed.json' with { type: 'json' };
 
 const STORAGE_KEY = 'recipes';
 
@@ -7,8 +8,18 @@ const STORAGE_KEY = 'recipes';
  */
 export function load(): Recipe[] {
 	if (typeof localStorage === 'undefined') return [];
+
 	const stored = localStorage.getItem(STORAGE_KEY);
-	return stored ? JSON.parse(stored) : [];
+
+	if (stored) {
+		return JSON.parse(stored);
+	}
+
+	try {
+		return recipe.array().parse(seed);
+	} catch {
+		return [];
+	}
 }
 
 /**
@@ -16,5 +27,6 @@ export function load(): Recipe[] {
  */
 export function save(recipes: Recipe[]): void {
 	if (typeof localStorage === 'undefined') return;
+
 	localStorage.setItem(STORAGE_KEY, JSON.stringify(recipes));
 }

@@ -1,0 +1,149 @@
+[
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440001",
+		"title": "Scrambled Eggs",
+		"ingredients": [
+			"3 eggs",
+			"1 tablespoon butter",
+			"Salt and pepper to taste",
+			"2 tablespoons milk (optional)"
+		],
+		"steps": [
+			"Crack eggs into a bowl and whisk with milk, salt, and pepper",
+			"Melt butter in a non-stick pan over medium heat",
+			"Pour in eggs and let sit for 20 seconds",
+			"Gently stir with a spatula, creating soft curds",
+			"Remove from heat when eggs are still slightly wet",
+			"Let rest for 30 seconds before serving"
+		],
+		"createdAt": "2026-02-01T10:00:00.000Z",
+		"updatedAt": "2026-02-01T10:00:00.000Z"
+	},
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440002",
+		"title": "Grilled Cheese Sandwich",
+		"ingredients": [
+			"2 slices bread",
+			"2 slices cheddar cheese",
+			"2 tablespoons butter"
+		],
+		"steps": [
+			"Butter one side of each bread slice",
+			"Place one slice butter-side down in a pan over medium heat",
+			"Add cheese slices on top",
+			"Place second bread slice on top, butter-side up",
+			"Cook until bottom is golden brown, about 3-4 minutes",
+			"Flip and cook until other side is golden and cheese melts",
+			"Cut diagonally and serve hot"
+		],
+		"createdAt": "2026-02-02T14:30:00.000Z",
+		"updatedAt": "2026-02-02T14:30:00.000Z"
+	},
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440003",
+		"title": "Spaghetti Aglio e Olio",
+		"ingredients": [
+			"1 pound spaghetti",
+			"1/2 cup olive oil",
+			"6 cloves garlic, thinly sliced",
+			"1/2 teaspoon red pepper flakes",
+			"Salt to taste",
+			"Fresh parsley, chopped",
+			"Parmesan cheese (optional)"
+		],
+		"steps": [
+			"Bring a large pot of salted water to boil",
+			"Cook spaghetti according to package directions until al dente",
+			"While pasta cooks, heat olive oil in a large pan over medium heat",
+			"Add sliced garlic and cook until golden, about 2 minutes",
+			"Add red pepper flakes and stir for 30 seconds",
+			"Reserve 1 cup pasta water, then drain spaghetti",
+			"Add pasta to the pan with garlic oil",
+			"Toss with pasta water as needed to create a light sauce",
+			"Top with parsley and parmesan before serving"
+		],
+		"createdAt": "2026-02-03T18:15:00.000Z",
+		"updatedAt": "2026-02-03T18:15:00.000Z"
+	},
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440004",
+		"title": "Chocolate Chip Cookies",
+		"ingredients": [
+			"2 1/4 cups all-purpose flour",
+			"1 teaspoon baking soda",
+			"1 teaspoon salt",
+			"1 cup butter, softened",
+			"3/4 cup sugar",
+			"3/4 cup brown sugar",
+			"2 eggs",
+			"2 teaspoons vanilla extract",
+			"2 cups chocolate chips"
+		],
+		"steps": [
+			"Preheat oven to 375°F",
+			"Mix flour, baking soda, and salt in a bowl",
+			"In a large bowl, beat butter and both sugars until creamy",
+			"Add eggs and vanilla, beat well",
+			"Gradually stir in flour mixture",
+			"Fold in chocolate chips",
+			"Drop rounded tablespoons of dough onto ungreased baking sheets",
+			"Bake 9-11 minutes or until golden brown",
+			"Cool on baking sheet for 2 minutes, then transfer to wire rack"
+		],
+		"createdAt": "2026-02-04T16:45:00.000Z",
+		"updatedAt": "2026-02-04T16:45:00.000Z"
+	},
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440005",
+		"title": "Simple Tomato Soup",
+		"ingredients": [
+			"2 tablespoons olive oil",
+			"1 onion, diced",
+			"3 cloves garlic, minced",
+			"1 can (28 oz) crushed tomatoes",
+			"2 cups vegetable broth",
+			"1 teaspoon sugar",
+			"Salt and pepper to taste",
+			"1/2 cup heavy cream (optional)"
+		],
+		"steps": [
+			"Heat olive oil in a large pot over medium heat",
+			"Add onion and cook until soft, about 5 minutes",
+			"Add garlic and cook for 1 minute",
+			"Pour in crushed tomatoes and vegetable broth",
+			"Add sugar, salt, and pepper",
+			"Bring to a boil, then reduce heat and simmer for 15 minutes",
+			"Blend with an immersion blender until smooth",
+			"Stir in cream if using",
+			"Taste and adjust seasoning before serving"
+		],
+		"createdAt": "2026-02-05T12:20:00.000Z",
+		"updatedAt": "2026-02-05T12:20:00.000Z"
+	},
+	{
+		"id": "550e8400-e29b-41d4-a716-446655440006",
+		"title": "Pancakes",
+		"ingredients": [
+			"1 1/2 cups all-purpose flour",
+			"3 tablespoons sugar",
+			"2 teaspoons baking powder",
+			"1/2 teaspoon salt",
+			"1 1/4 cups milk",
+			"1 egg",
+			"3 tablespoons melted butter",
+			"Butter or oil for cooking"
+		],
+		"steps": [
+			"Mix flour, sugar, baking powder, and salt in a large bowl",
+			"In another bowl, whisk together milk, egg, and melted butter",
+			"Pour wet ingredients into dry ingredients and stir until just combined",
+			"Heat a griddle or pan over medium heat and grease lightly",
+			"Pour 1/4 cup batter for each pancake",
+			"Cook until bubbles form on surface, about 2-3 minutes",
+			"Flip and cook until golden brown on other side",
+			"Serve hot with butter and syrup"
+		],
+		"createdAt": "2026-02-06T08:00:00.000Z",
+		"updatedAt": "2026-02-06T08:00:00.000Z"
+	}
+]
