@@ -1,3 +1,4 @@
+import z from 'zod';
 import { type Recipe, recipe } from './models';
 import seed from './seed.json' with { type: 'json' };
 
@@ -16,7 +17,13 @@ export function load(): Recipe[] {
 	}
 
 	try {
-		return recipe.array().parse(seed);
+		return recipe
+			.extend({
+				updatedAt: z.coerce.date(),
+				createdAt: z.coerce.date(),
+			})
+			.array()
+			.parse(seed);
 	} catch {
 		return [];
 	}
