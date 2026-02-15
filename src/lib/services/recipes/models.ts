@@ -10,3 +10,11 @@ export const recipe = z.object({
 });
 
 export type Recipe = z.infer<typeof recipe>;
+
+export const recipeInput = recipe.omit({
+	id: true,
+	updatedAt: true,
+	createdAt: true,
+});
+
+export type RecipeInput = z.infer<typeof recipeInput>;
