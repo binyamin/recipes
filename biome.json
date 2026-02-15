@@ -38,7 +38,7 @@
 	},
 	"overrides": [
 		{
-			"includes": ["**/*.svelte"],
+			"includes": ["**/*.svelte", "**/*.svelte.{js,ts}"],
 			"linter": {
 				"rules": {
 					"style": {
