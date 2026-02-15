@@ -1,12 +1,13 @@
 import { z } from 'zod';
 import { type Recipe, type RecipeInput, recipe, recipeInput } from './models';
+import { load, save } from './storage';
 
 /**
  * A reactive list of all recipes
  */
 // Note: We can export this state directly, even though we mutate it sometimes,
 // because we never directly reassign the `list` variable.
-export let list = $state<Recipe[]>([]);
+export let list = $state<Recipe[]>(load());
 
 /**
  * Save a new recipe
@@ -25,6 +26,8 @@ export function create(input: RecipeInput): string {
 	} satisfies Recipe);
 
 	list.push(parsed);
+
+	save(list);
 
 	return parsed.id;
 }
@@ -58,6 +61,8 @@ export function update(id: string, input: RecipeInput): void {
 	};
 
 	list.splice(idx, 1, data);
+
+	save(list);
 }
 
 /**
@@ -70,5 +75,8 @@ export function remove(id: string): boolean {
 	if (!idx) return false;
 
 	list.splice(idx, 1);
+
+	save(list);
+
 	return true;
 }
