@@ -13,6 +13,17 @@
 	<article>
 		<h1>{recipe.title}</h1>
 
+		<p>
+			{#if +recipe.createdAt === +recipe.updatedAt}
+				Written
+			{:else}
+				Last updated
+			{/if}
+			<time datetime="{recipe.updatedAt.toISOString()}">
+				{recipe.updatedAt.toLocaleDateString('en', {dateStyle: 'long'})}
+			</time>
+		</p>
+
 		<h2>Ingredients</h2>
 		<ul>
 			{#each recipe.ingredients as item}
