@@ -3,3 +3,5 @@
 @import './base/tokens.css' layer(base);
 @import './base/reset.css' layer(base);
 @import './base/global.css' layer(base);
+
+@import './layouts/repel.css' layer(composition);

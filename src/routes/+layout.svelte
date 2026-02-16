@@ -10,4 +10,7 @@
 	<link rel="icon" href="data:," />
 </svelte:head>
 
-{@render children?.()}
+<header>
+	<nav class="repel"><a href="/">{SITE_NAME}</a></nav>
+</header>
+<main>{@render children()}</main>
