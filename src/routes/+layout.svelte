@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { SITE_NAME } from '$lib';
+	import '../css/main.css';
 
 	let { children } = $props();
 </script>
