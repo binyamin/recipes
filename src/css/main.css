@@ -5,3 +5,5 @@
 @import './base/global.css' layer(base);
 
 @import './layouts/repel.css' layer(composition);
+
+@import './utility/visually-hidden.css' layer(utility);
