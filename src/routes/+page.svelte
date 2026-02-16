@@ -7,8 +7,12 @@
 
 <h1>Recipes</h1>
 
-<ul>
-	{#each sorted as recipe (recipe.id)}
-		<li><a href="/recipes/{recipe.id}">{recipe.title}</a></li>
-	{/each}
-</ul>
+{#if sorted.length > 0}
+	<ul>
+		{#each sorted as recipe (recipe.id)}
+			<li><a href="/recipes/{recipe.id}">{recipe.title}</a></li>
+		{/each}
+	</ul>
+{:else}
+<!-- empty state -->
+{/if}
