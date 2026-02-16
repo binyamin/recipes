@@ -5,6 +5,19 @@ import seed from './seed.json' with { type: 'json' };
 const STORAGE_KEY = 'recipes';
 
 /**
+ * Process data after loading it (eg. coerce data types).
+ */
+function parseData(data: unknown[]) {
+	return recipe
+		.extend({
+			updatedAt: z.coerce.date(),
+			createdAt: z.coerce.date(),
+		})
+		.array()
+		.parse(data);
+}
+
+/**
  * Loads recipes from localStorage
  */
 export function load(): Recipe[] {
@@ -13,17 +26,11 @@ export function load(): Recipe[] {
 	const stored = localStorage.getItem(STORAGE_KEY);
 
 	if (stored) {
-		return JSON.parse(stored);
+		return parseData(JSON.parse(stored));
 	}
 
 	try {
-		return recipe
-			.extend({
-				updatedAt: z.coerce.date(),
-				createdAt: z.coerce.date(),
-			})
-			.array()
-			.parse(seed);
+		return parseData(seed);
 	} catch {
 		return [];
 	}
