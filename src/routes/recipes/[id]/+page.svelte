@@ -13,6 +13,8 @@
 	<article>
 		<h1>{recipe.title}</h1>
 
+		<a href="/recipes/{params.id}/edit">edit</a>
+
 		<p>
 			{#if +recipe.createdAt === +recipe.updatedAt}
 				Written
