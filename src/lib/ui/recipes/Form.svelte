@@ -1,40 +1,45 @@
 <script lang="ts">
 	import type { HTMLFormAttributes } from 'svelte/elements';
+	import { type RecipeInput } from '$lib/services/recipes/models';
 	import ListControl from '../controls/List.svelte';
 
-	interface Props extends HTMLFormAttributes {}
+	interface Props extends HTMLFormAttributes {
+		/**
+		 * pre-fill recipe data
+		 */
+		recipe?: RecipeInput;
+	}
 
-	let { ...rest }: Props = $props();
+	let { recipe, ...rest }: Props = $props();
 
 	const uid = $props.id();
 </script>
 
 <form {...rest}>
 	<label for="{uid}-title">Title</label>
-	<input id="{uid}-title" name="title" type="text" min={1} required />
+	<input
+		id="{uid}-title"
+		name="title"
+		type="text"
+		min={1}
+		required
+		value="{recipe?.title}"
+	/>
 
-	<ListControl label="Ingredients">
-		{#snippet input({id}, i)}
-			<label for="{uid}-ingredients-{id}" class="visually-hidden">
-				Ingredient #{i+1}
-			</label>
-			<input
-				id="{uid}-ingredients-{id}"
-				name="ingredients"
-				type="text"
-				min="1"
-				required
-			/>
+	<ListControl label="Ingredients" value={recipe?.ingredients}>
+		{#snippet input(props, i)}
+			<label for="{props.id}" class="visually-hidden">Ingredient #{i+1}</label>
+			<input {...props} name="ingredients" type="text" min="1" required />
 		{/snippet}
 	</ListControl>
 
-	<ListControl label="Steps">
-		{#snippet input({id}, i)}
-			<label for="{uid}-steps-{id}">
-				<span class="visually-hidden">Step </span>
+	<ListControl label="Steps" value={recipe?.steps}>
+		{#snippet input(props, i)}
+			<label for="{props.id}">
+				<span class="visually-hidden">Step</span>
 				{i+1}
 			</label>
-			<input id="{uid}-steps-{id}" name="steps" type="text" required min="1" />
+			<input {...props} name="steps" type="text" required min="1" />
 		{/snippet}
 	</ListControl>
 

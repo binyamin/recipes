@@ -1,10 +1,12 @@
 <script lang="ts">
 	import type { HTMLFormAttributes } from 'svelte/elements';
-	import { update } from '$lib/services/recipes/state.svelte';
+	import { list, update } from '$lib/services/recipes/state.svelte';
 	import RecipeForm from '$lib/ui/recipes/Form.svelte';
 	import type { PageProps } from './$types';
 
 	let { params }: PageProps = $props();
+
+	let recipe = $derived(list.find((v) => v.id === params.id));
 
 	const onsubmit: HTMLFormAttributes['on:submit'] = (e) => {
 		e.preventDefault();
@@ -22,4 +24,4 @@
 
 <h1>Edit Recipe</h1>
 
-<RecipeForm {onsubmit} />
+<RecipeForm {onsubmit} {recipe} />
