@@ -1,0 +1,274 @@
+{
+	"color": {
+		"$type": "color",
+		"$description": "Colors from Tailwind CSS",
+		"neutral": {
+			"50": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.985,
+						0.001,
+						106.423
+					],
+					"alpha": 1,
+					"hex": "#fafaf9"
+				}
+			},
+			"100": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.97,
+						0.001,
+						106.424
+					],
+					"alpha": 1,
+					"hex": "#f5f5f4"
+				}
+			},
+			"200": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.923,
+						0.003,
+						48.717
+					],
+					"alpha": 1,
+					"hex": "#e7e5e4"
+				}
+			},
+			"300": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.869,
+						0.005,
+						56.366
+					],
+					"alpha": 1,
+					"hex": "#d6d3d1"
+				}
+			},
+			"400": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.709,
+						0.01,
+						56.259
+					],
+					"alpha": 1,
+					"hex": "#a6a09b"
+				}
+			},
+			"500": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.553,
+						0.013,
+						58.071
+					],
+					"alpha": 1,
+					"hex": "#79716b"
+				}
+			},
+			"600": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.444,
+						0.011,
+						73.639
+					],
+					"alpha": 1,
+					"hex": "#57534d"
+				}
+			},
+			"700": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.374,
+						0.01,
+						67.558
+					],
+					"alpha": 1,
+					"hex": "#44403b"
+				}
+			},
+			"800": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.268,
+						0.007,
+						34.298
+					],
+					"alpha": 1,
+					"hex": "#292524"
+				}
+			},
+			"900": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.216,
+						0.006,
+						56.043
+					],
+					"alpha": 1,
+					"hex": "#1c1917"
+				}
+			},
+			"950": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.147,
+						0.004,
+						49.25
+					],
+					"alpha": 1,
+					"hex": "#0c0a09"
+				}
+			}
+		},
+		"accent": {
+			"50": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.979,
+						0.021,
+						166.113
+					],
+					"alpha": 1,
+					"hex": "#ecfdf5"
+				}
+			},
+			"100": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.95,
+						0.052,
+						163.051
+					],
+					"alpha": 1,
+					"hex": "#d0fae5"
+				}
+			},
+			"200": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.905,
+						0.093,
+						164.15
+					],
+					"alpha": 1,
+					"hex": "#a4f4cf"
+				}
+			},
+			"300": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.845,
+						0.143,
+						164.978
+					],
+					"alpha": 1,
+					"hex": "#5ee9b5"
+				}
+			},
+			"400": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.765,
+						0.177,
+						163.223
+					],
+					"alpha": 1,
+					"hex": "#00d294"
+				}
+			},
+			"500": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.696,
+						0.17,
+						162.48
+					],
+					"alpha": 1,
+					"hex": "#00bb7f"
+				}
+			},
+			"600": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.596,
+						0.145,
+						163.225
+					],
+					"alpha": 1,
+					"hex": "#009767"
+				}
+			},
+			"700": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.508,
+						0.118,
+						165.612
+					],
+					"alpha": 1,
+					"hex": "#007956"
+				}
+			},
+			"800": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.432,
+						0.095,
+						166.913
+					],
+					"alpha": 1,
+					"hex": "#005f46"
+				}
+			},
+			"900": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.378,
+						0.077,
+						168.94
+					],
+					"alpha": 1,
+					"hex": "#004e3b"
+				}
+			},
+			"950": {
+				"$value": {
+					"colorSpace": "oklch",
+					"components": [
+						0.262,
+						0.051,
+						172.552
+					],
+					"alpha": 1,
+					"hex": "#002c22"
+				}
+			}
+		}
+	}
+}

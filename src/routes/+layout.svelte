@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { SITE_NAME } from '$lib';
+	import 'virtual:sugarcube.css';
 	import '../css/main.css';
+	import { SITE_NAME } from '$lib';
 
 	let { children } = $props();
 </script>

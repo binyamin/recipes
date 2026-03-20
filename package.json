@@ -16,6 +16,8 @@
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
+		"@sugarcube-sh/cli": "^0.1.5",
+		"@sugarcube-sh/vite": "^0.1.6",
 		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/kit": "^2.51.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",

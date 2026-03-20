@@ -1,0 +1,8 @@
+{
+	"font": {
+		"$type": "fontFamily",
+		"sans": {
+			"$value": ["ui-sans-serif", "system-ui", "sans-serif"]
+		}
+	}
+}

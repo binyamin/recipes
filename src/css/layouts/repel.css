@@ -9,7 +9,7 @@
 	align-items: var(--repel-valign, center);
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--repel-gap, var(--space-s));
+	gap: var(--repel-gap, var(--space-sm));
 	justify-content: space-between;
 
 	&[data-nowrap] {
