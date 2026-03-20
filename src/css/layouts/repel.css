@@ -18,4 +18,9 @@
 	&[data-repel-nowrap] {
 		flex-wrap: nowrap;
 	}
+
+	> * {
+		--repel-gap: initial;
+		--repel-valign: initial;
+	}
 }
