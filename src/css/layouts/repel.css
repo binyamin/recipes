@@ -5,7 +5,7 @@
  * Config:
  * --repel-gap (space-sm) Defines the space between items
  * --repel-valign (stretch) Controls vertical alignment
- * [data-nowrap] Disable wrapping on overflow
+ * [data-repel-nowrap] Disable wrapping on overflow
  */
 
 .repel {
@@ -15,7 +15,7 @@
 	gap: var(--repel-gap, var(--space-sm));
 	justify-content: space-between;
 
-	&[data-nowrap] {
+	&[data-repel-nowrap] {
 		flex-wrap: nowrap;
 	}
 }
