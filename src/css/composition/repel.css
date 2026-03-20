@@ -9,11 +9,11 @@
  */
 
 .repel {
-	align-items: var(--repel-valign, center);
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--repel-gap, var(--space-sm));
 	justify-content: space-between;
+	align-items: var(--repel-valign, center);
+	gap: var(--repel-gap, var(--space-sm));
 
 	&[data-repel-nowrap] {
 		flex-wrap: nowrap;
