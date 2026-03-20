@@ -37,7 +37,7 @@
 </script>
 
 {#if !recipe}
-<!-- missing state -->
+	<!-- missing state -->
 {:else}
 	<article>
 		<h1>{recipe.title}</h1>
@@ -51,8 +51,8 @@
 			{:else}
 				Last updated
 			{/if}
-			<time datetime="{recipe.updatedAt.toISOString()}">
-				{recipe.updatedAt.toLocaleDateString('en', {dateStyle: 'long'})}
+			<time datetime={recipe.updatedAt.toISOString()}>
+				{recipe.updatedAt.toLocaleDateString('en', { dateStyle: 'long' })}
 			</time>
 		</p>
 

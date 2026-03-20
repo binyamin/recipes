@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
 	import { useId } from '$lib/utils/use-id';
+	import type { Snippet } from 'svelte';
 
 	let uid = $props.id();
 

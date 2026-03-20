@@ -16,5 +16,5 @@
 		{/each}
 	</ul>
 {:else}
-<!-- empty state -->
+	<!-- empty state -->
 {/if}

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { HTMLFormAttributes } from 'svelte/elements';
 	import { create } from '$lib/services/recipes/state.svelte';
 	import RecipeForm from '$lib/ui/recipes/Form.svelte';
+	import type { HTMLFormAttributes } from 'svelte/elements';
 
 	const onsubmit: HTMLFormAttributes['on:submit'] = (e) => {
 		e.preventDefault();

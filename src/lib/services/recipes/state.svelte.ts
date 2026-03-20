@@ -1,4 +1,4 @@
-import { type Recipe, type RecipeInput, recipe, recipeInput } from './models';
+import { type Recipe, recipe, type RecipeInput, recipeInput } from './models';
 import { load, save } from './storage';
 
 /**
@@ -16,12 +16,14 @@ export let list = $state<Recipe[]>(load());
 export function create(input: RecipeInput): string {
 	const now = new Date();
 
-	const parsed = recipe.parse({
-		...input,
-		id: crypto.randomUUID(),
-		updatedAt: now,
-		createdAt: now,
-	} satisfies Recipe);
+	const parsed = recipe.parse(
+		{
+			...input,
+			id: crypto.randomUUID(),
+			updatedAt: now,
+			createdAt: now,
+		} satisfies Recipe,
+	);
 
 	list.push(parsed);
 

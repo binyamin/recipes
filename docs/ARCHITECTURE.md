@@ -38,19 +38,23 @@ Each route segment (page) has a dedicated folder. It can contain the view, layou
 You can also colocate components here, but limit it to domain-specific blocks that wouldn't make sense on any other page.
 
 `+page.svelte`
+
 - Loads data from `+page.ts`
 - Renders components
 
 `+page.ts`
+
 - Calls the store
 - Sends data to `+page.svelte`
 - Avoids deep business logic
 
 `+layout.svelte`
+
 - Renders shared UI
 - Applies to all child routes (pages & layouts)
 
 `+layout.ts`
+
 - functions like `+page.ts` for the layout
 - defines data for all child routes
 
@@ -59,6 +63,7 @@ You can also colocate components here, but limit it to domain-specific blocks th
 Split into generic & domain-specific components.
 
 **Examples**:
+
 ```
 lib/ui/button.svelte
 routes/header.svelte
@@ -69,6 +74,7 @@ routes/header.svelte
 This folder keeps logic out of UI. It's split into folders based on domain. Inside the folders, each file has a single responsibility.
 
 **Examples**:
+
 - `models.ts` - Defines the shape of the data
 - `store.ts` - Holds reactive state
 - `validation.ts` - Contains rules for validating user input
