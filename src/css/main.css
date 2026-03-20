@@ -1,5 +1,6 @@
 @layer base, composition, block, utility;
 
+@import './base/config.css' layer(base);
 @import './base/reset.css' layer(base);
 @import './base/global.css' layer(base);
 
@@ -10,6 +11,7 @@
 @import './composition/repel.css' layer(composition);
 @import './composition/sidebar.css' layer(composition);
 
+@import './utility/container.css' layer(utility);
 @import './utility/region.css' layer(utility);
 @import './utility/text.css' layer(utility);
 @import './utility/visually-hidden.css' layer(utility);
