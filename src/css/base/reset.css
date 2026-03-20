@@ -85,6 +85,18 @@ select {
 	font: inherit;
 }
 
+/* Headings & captions are unstyled by default. They should
+be used semantically, not visually. (Binyamin Green) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+	font: inherit;
+}
+
 /* Remove all animations and transitions for people that
 prefer not to see them (Andy Bell) */
 @media (prefers-reduced-motion: reduce) {

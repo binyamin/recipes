@@ -5,4 +5,5 @@
 
 @import './layouts/repel.css' layer(composition);
 
+@import './utility/text.css' layer(utility);
 @import './utility/visually-hidden.css' layer(utility);
