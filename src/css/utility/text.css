@@ -1,0 +1,9 @@
+/**
+ * Typography Utils
+ */
+
+.text-heading {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	line-height: 1.2;
+}

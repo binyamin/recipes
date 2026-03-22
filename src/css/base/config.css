@@ -1,0 +1,17 @@
+/**
+ * CONFIG
+ *
+ * Design tokens that can't be defined in DTCG files (yet)
+ * E.g. "ch" unit, fluid ("clamp") dimensions
+ */
+
+:root {
+	/* Very wide, use for dashboards/complex UIs */
+	--container-lg: 80rem;
+	/* general layouts */
+	--container-md: 60rem;
+	/* text-heavy content, prose, articles */
+	--container-sm: 65ch;
+	/* narrow forms, modals */
+	--container-xs: 45ch;
+}

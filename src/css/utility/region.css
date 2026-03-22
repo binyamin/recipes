@@ -1,0 +1,15 @@
+/**
+ * REGION
+ * Consistent block padding for page sections
+ *
+ * Config:
+ * --region-space (space-sm)
+ */
+
+.region {
+	padding-block: var(--region-space, var(--space-sm));
+
+	> * {
+		--region-space: initial;
+	}
+}

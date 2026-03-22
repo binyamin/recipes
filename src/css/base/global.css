@@ -2,3 +2,11 @@
  * Global Styles
  * Low-specificity styles that apply to the whole project
  */
+
+body {
+	background-color: var(--color-surface-base);
+	color: var(--color-text-base);
+	font-family: var(--font-body);
+	font-size: var(--size-base);
+	line-height: 1.5;
+}
