@@ -48,6 +48,8 @@ html:focus-within {
 body {
 	/* (Binyamin Green) */
 	min-height: 100dvh;
+	/* Prevent layout shift due to scrollbars (Binyamin Green) */
+	width: 100vw;
 
 	/* (Andy Bell) */
 	text-rendering: optimizeSpeed;
