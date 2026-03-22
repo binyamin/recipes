@@ -14,7 +14,9 @@ This section talks briefly about various important files & directories.
 │   │   ├── ui/           # Generic UI components
 │   │   └── services/     # Domain-specific logic
 │   │
-│   ├── css/              # Global styles & tokens
+│   ├── css/              # Stylesheets
+│   ├── tokens/           # Design Tokens
+│   │
 │   ├── routes/           # Pages & data loaders
 │   │
 │   └── app.html          # HTML template
@@ -29,7 +31,12 @@ This section explains the important parts of the codebase in more depth. You can
 
 ### 2.1 CSS
 
-This is for global CSS, design tokens, and shared compositions/layouts. We follow the [CUBE CSS](https://cube.fyi) methodology.
+Design tokens are stored in `./tokens`, and follow [the DCTG 2025.10 spec](https://www.designtokens.org/tr/2025.10/). We use [sugarcube](https://sugarcube.sh/) to generate CSS variables and some utility classes from the tokens.
+
+For `./css`, we follow the [CUBE CSS](https://cube.fyi) methodology:
+- `css/base` contains global styles (e.g. CSS reset)
+- `css/composition` contains layout primitives
+- `css/utility` houses helper classes, often to abstract repeated code
 
 ### 2.2 Routes
 
