@@ -7,8 +7,6 @@
 
 <h1>Recipes</h1>
 
-<a href="/recipes/new">Create a Recipe</a>
-
 {#if sorted.length > 0}
 	<ul>
 		{#each sorted as recipe (recipe.id)}

@@ -15,6 +15,8 @@
 	<header>
 		<nav class="repel">
 			<a href="/">{SITE_NAME}</a>
+
+			<a href="/recipes/new">Create a Recipe</a>
 		</nav>
 	</header>
 	<main>{@render children()}</main>
