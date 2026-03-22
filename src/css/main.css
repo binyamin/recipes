@@ -15,3 +15,6 @@
 @import './utility/region.css' layer(utility);
 @import './utility/text.css' layer(utility);
 @import './utility/visually-hidden.css' layer(utility);
+
+@import './blocks/button.css' layer(block);
+@import './blocks/logo.css' layer(block);

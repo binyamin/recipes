@@ -13,10 +13,10 @@
 
 <div class="container">
 	<header>
-		<nav class="repel">
-			<a href="/">{SITE_NAME}</a>
+		<nav class="repel | region">
+			<a href="/" class="logo">{SITE_NAME}</a>
 
-			<a href="/recipes/new">Create a Recipe</a>
+			<a href="/recipes/new" class="button">Create a Recipe</a>
 		</nav>
 	</header>
 	<main>{@render children()}</main>
