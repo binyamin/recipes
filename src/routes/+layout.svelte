@@ -11,7 +11,11 @@
 	<link rel="icon" href="data:," />
 </svelte:head>
 
-<header>
-	<nav class="repel"><a href="/">{SITE_NAME}</a></nav>
-</header>
-<main>{@render children()}</main>
+<div class="container">
+	<header>
+		<nav class="repel">
+			<a href="/">{SITE_NAME}</a>
+		</nav>
+	</header>
+	<main>{@render children()}</main>
+</div>
