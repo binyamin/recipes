@@ -2,6 +2,7 @@
 	import 'virtual:sugarcube.css';
 	import '../css/main.css';
 	import { SITE_NAME } from '$lib';
+	import IconPlus from '~icons/lucide/plus';
 
 	let { children } = $props();
 </script>
@@ -18,9 +19,11 @@
 
 			<a
 				href="/recipes/new"
-				class="button"
+				class="button | cluster"
+				style:--cluster-valign="center"
+				style:--cluster-gap="var(--space-3xs)"
 				data-button-variant="secondary"
-			>New Recipe</a>
+			><IconPlus /> New Recipe</a>
 		</nav>
 	</header>
 	<main>{@render children()}</main>
