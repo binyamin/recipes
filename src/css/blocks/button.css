@@ -6,7 +6,6 @@
 	padding-inline: var(--space-xs);
 
 	&[href] {
-		cursor: default;
 		text-decoration: none;
 	}
 
