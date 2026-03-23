@@ -38,6 +38,9 @@
 			},
 			"base": {
 				"$value": "{color.neutral.300}"
+			},
+			"focus": {
+				"$value": "{color.neutral.700}"
 			}
 		},
 
