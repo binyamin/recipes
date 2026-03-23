@@ -28,13 +28,7 @@
 				"$value": "{color.neutral.900}"
 			},
 			"link": {
-				"$description": "Tailwind's blue/600",
-				"$value": {
-					"colorSpace": "oklch",
-					"components": [0.55, 0.22, 263],
-					"alpha": 1,
-					"hex": "#2563eb"
-				}
+				"$value": "{color.text.base}"
 			}
 		},
 
