@@ -26,5 +26,5 @@
 			><IconPlus /> New Recipe</a>
 		</nav>
 	</header>
-	<main>{@render children()}</main>
+	<main class="region">{@render children()}</main>
 </div>
