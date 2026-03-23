@@ -1,8 +1,8 @@
 .logo {
-	font-weight: 700;
 	color: currentColor;
-	text-decoration: none;
 	font-size: var(--size-xl);
+	font-weight: 700;
+	text-decoration: none;
 
 	&:hover {
 		text-decoration: underline;
