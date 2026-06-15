@@ -1,5 +1,4 @@
 <script lang="ts">
-	import 'virtual:sugarcube.css';
 	import '../css/main.css';
 	import { SITE_NAME } from '$lib';
 	import IconPlus from '~icons/lucide/plus';

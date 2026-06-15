@@ -15,7 +15,6 @@ This section talks briefly about various important files & directories.
 │   │   └── services/     # Domain-specific logic
 │   │
 │   ├── css/              # Stylesheets
-│   ├── tokens/           # Design Tokens
 │   │
 │   ├── routes/           # Pages & data loaders
 │   │
@@ -32,14 +31,9 @@ reference it as you're poking around.
 
 ### 2.1 CSS
 
-Design tokens are stored in `./tokens`, and follow
-[the DCTG 2025.10 spec](https://www.designtokens.org/tr/2025.10/). We use
-[sugarcube](https://sugarcube.sh/) to generate CSS variables and some utility
-classes from the tokens.
+We follow the [CUBE CSS](https://cube.fyi) methodology:
 
-For `./css`, we follow the [CUBE CSS](https://cube.fyi) methodology:
-
-- `css/base` contains global styles (e.g. CSS reset)
+- `css/base` contains global styles (e.g. CSS reset) and design tokens
 - `css/composition` contains layout primitives
 - `css/utility` houses helper classes, often to abstract repeated code
 

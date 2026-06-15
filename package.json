@@ -17,8 +17,6 @@
 	},
 	"devDependencies": {
 		"@iconify-json/lucide": "^1.2.112",
-		"@sugarcube-sh/cli": "^0.1.16",
-		"@sugarcube-sh/vite": "^0.1.16",
 		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/kit": "^2.65.1",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
