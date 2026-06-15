@@ -8,7 +8,6 @@
 
 <svelte:head>
 	<title>{SITE_NAME}</title>
-	<link rel="icon" href="data:," />
 </svelte:head>
 
 <div class="container">
