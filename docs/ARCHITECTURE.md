@@ -27,11 +27,15 @@ This section talks briefly about various important files & directories.
 
 ## 2. Code Map
 
-This section explains the important parts of the codebase in more depth. You can reference it as you're poking around.
+This section explains the important parts of the codebase in more depth. You can
+reference it as you're poking around.
 
 ### 2.1 CSS
 
-Design tokens are stored in `./tokens`, and follow [the DCTG 2025.10 spec](https://www.designtokens.org/tr/2025.10/). We use [sugarcube](https://sugarcube.sh/) to generate CSS variables and some utility classes from the tokens.
+Design tokens are stored in `./tokens`, and follow
+[the DCTG 2025.10 spec](https://www.designtokens.org/tr/2025.10/). We use
+[sugarcube](https://sugarcube.sh/) to generate CSS variables and some utility
+classes from the tokens.
 
 For `./css`, we follow the [CUBE CSS](https://cube.fyi) methodology:
 
@@ -41,9 +45,12 @@ For `./css`, we follow the [CUBE CSS](https://cube.fyi) methodology:
 
 ### 2.2 Routes
 
-Each route segment (page) has a dedicated folder. It can contain the view, layout, data loader(s) and more. These files are **layout + composition**, not logic-heavy.
+Each route segment (page) has a dedicated folder. It can contain the view,
+layout, data loader(s) and more. These files are **layout + composition**, not
+logic-heavy.
 
-You can also colocate components here, but limit it to domain-specific blocks that wouldn't make sense on any other page.
+You can also colocate components here, but limit it to domain-specific blocks
+that wouldn't make sense on any other page.
 
 `+page.svelte`
 
@@ -79,7 +86,8 @@ routes/header.svelte
 
 ### 2.4 Services
 
-This folder keeps logic out of UI. It's split into folders based on domain. Inside the folders, each file has a single responsibility.
+This folder keeps logic out of UI. It's split into folders based on domain.
+Inside the folders, each file has a single responsibility.
 
 **Examples**:
 
