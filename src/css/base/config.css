@@ -6,7 +6,7 @@
 
 :root {
 	--font-body: var(--font-sans);
-	--font-heading: var(--font-sans);
+	--font-display: var(--font-sans);
 
 	--color-surface-base: var(--color-white);
 	--color-surface-raised: var(--color-white);

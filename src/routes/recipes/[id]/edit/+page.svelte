@@ -22,6 +22,6 @@
 	};
 </script>
 
-<h1>Edit Recipe</h1>
+<h1 class="text-title">Edit Recipe</h1>
 
 <RecipeForm {onsubmit} {recipe} />

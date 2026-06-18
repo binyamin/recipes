@@ -2,12 +2,17 @@
  * Typography Utils
  */
 
+.text-title,
 .text-heading {
-	font-family: var(--font-heading);
+	font-family: var(--font-display);
 	font-weight: 700;
 	line-height: 1.2;
 }
 
-.text-4xl {
+.text-title {
 	font-size: var(--size-4xl);
+}
+
+.text-heading {
+	font-size: var(--size-3xl);
 }

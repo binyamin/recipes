@@ -17,6 +17,6 @@
 	};
 </script>
 
-<h1>Create a Recipe</h1>
+<h1 class="text-title">Create a Recipe</h1>
 
 <RecipeForm {onsubmit} />
