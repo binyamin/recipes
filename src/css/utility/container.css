@@ -3,12 +3,12 @@
  * A high-level content wrapper
  *
  * Config:
- * --container-max-width (container-s) Constrains container width
+ * --container-max-width (100%) Constrains container width
  * --container-space (space-m) Defines the horizontal gutters
  */
 
 .container {
-	max-inline-size: var(--container-max-width, var(--container-s));
+	max-inline-size: var(--container-max-width, 100%);
 	margin-inline: auto;
 	padding-inline: var(--container-space, var(--space-m));
 
