@@ -38,6 +38,11 @@ ol[role='list'] {
 	padding: 0;
 }
 
+html {
+	/* Prevent layout shift from vertical scrollbars (MDN) */
+	scrollbar-gutter: stable;
+}
+
 /* Set core root defaults (Andy Bell) */
 html:focus-within {
 	/* Enabled smooth-scrolling */
