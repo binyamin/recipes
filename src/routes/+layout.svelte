@@ -10,19 +10,13 @@
 	<title>{SITE_NAME}</title>
 </svelte:head>
 
-<div class="container">
+<div>
 	<header>
-		<nav class="repel | region">
-			<a href="/" class="logo">{SITE_NAME}</a>
+		<nav>
+			<a href="/">{SITE_NAME}</a>
 
-			<a
-				href="/recipes/new"
-				class="button | cluster"
-				style:--cluster-valign="center"
-				style:--cluster-gap="var(--space-3xs)"
-				data-button-variant="secondary"
-			><IconPlus /> New Recipe</a>
+			<a href="/recipes/new"><IconPlus /> New Recipe</a>
 		</nav>
 	</header>
-	<main class="region">{@render children()}</main>
+	<main>{@render children()}</main>
 </div>
