@@ -16,17 +16,17 @@
 		"zod": "^4.4.3"
 	},
 	"devDependencies": {
-		"@iconify-json/lucide": "^1.2.112",
+		"@iconify-json/lucide": "^1.2.118",
 		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.65.1",
-		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"@types/node": "^25.9.3",
-		"dprint": "^0.54.0",
-		"svelte": "^5.56.3",
-		"svelte-check": "^4.6.0",
-		"typescript": "^6.0.3",
+		"@sveltejs/kit": "^2.70.1",
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
+		"@types/node": "^26.1.1",
+		"dprint": "^0.55.2",
+		"svelte": "^5.56.6",
+		"svelte-check": "^4.7.3",
+		"typescript": "^7.0.2",
 		"unplugin-icons": "^23.0.1",
-		"vite": "^8.0.16"
+		"vite": "^8.1.5"
 	},
 	"peerDependencies": {
 		"svelte": "5.x"
