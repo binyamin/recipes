@@ -5,15 +5,15 @@
  */
 
 :root {
-	--font-body: var(--font-sans);
-	--font-display: var(--font-sans);
+	--font-family-body: var(--font-family-sans);
+	--font-family-display: var(--font-family-sans);
 
-	--color-surface-base: var(--color-white);
-	--color-surface-raised: var(--color-white);
-	--color-surface-lowered: var(--color-neutral-100);
+	--color-bg-base: var(--color-white);
+	--color-bg-raised: var(--color-white);
+	--color-bg-lowered: var(--color-neutral-100);
 
 	--color-text-base: var(--color-neutral-900);
-	--color-text-link: var(--color-text-base);
+	--color-text-accent: var(--color-text-base);
 
 	--color-border-subtle: var(--color-neutral-200);
 	--color-border-base: var(--color-neutral-300);
