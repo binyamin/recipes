@@ -11,26 +11,21 @@
 </svelte:head>
 
 <style>
-	.site-header {
-		padding-block: var(--space-s);
-		border-block-end: 2px solid black;
-	}
+	.root {
+		--container-max-width: var(--container-s);
 
-	.site-footer {
 		padding-block: var(--space-s);
 	}
 </style>
 
-<div class="cover" style:--container-max-width="var(--container-m)">
-	<nav class="site-header">
-		<div class="repel | container">
-			<a href="/">{SITE_NAME}</a>
+<div class="root cover container">
+	<nav class="repel">
+		<a href="/">{SITE_NAME}</a>
 
-			<a href="/recipes/new"><IconPlus class="icon" /> New Recipe</a>
-		</div>
+		<a href="/recipes/new"><IconPlus class="icon" /> New Recipe</a>
 	</nav>
-	<main class="cover_target | container">{@render children()}</main>
-	<footer class="site-footer | container">
+	<main class="cover_target">{@render children()}</main>
+	<footer class="center">
 		<p>Copyright 2026 <a href="https://binyam.in">Binyamin Green</a></p>
 	</footer>
 </div>
