@@ -8,7 +8,41 @@ body {
 	color: var(--color-text-base);
 	font-family: var(--font-family-body);
 	font-size: var(--font-size-m);
-	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-display);
+	font-weight: 700;
+	line-height: var(--leading-tight, 1.2);
+	overflow-wrap: break-word;
+	text-wrap: balance;
+}
+
+h1 {
+	font-size: var(--font-size-4xl);
+}
+
+h2 {
+	font-size: var(--font-size-3xl);
+}
+
+h3 {
+	font-size: var(--font-size-2xl);
+}
+
+h4 {
+	font-size: var(--font-size-xl);
+}
+
+p {
+	line-height: var(--leading-normal, 1.5);
+	overflow-wrap: break-word;
+	text-wrap: pretty;
 }
 
 a {

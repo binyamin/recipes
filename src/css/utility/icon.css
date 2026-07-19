@@ -1,0 +1,11 @@
+/**
+ * ICON
+ * Provides in-text icons with proper alignment
+ */
+
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: round(1.2em, 2px);
+}
