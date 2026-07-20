@@ -8,14 +8,12 @@
 	--font-family-body: var(--font-family-sans);
 	--font-family-display: var(--font-family-sans);
 
-	--color-bg-base: var(--color-white);
-	--color-bg-raised: var(--color-white);
-	--color-bg-lowered: var(--color-neutral-100);
+	--color-bg: var(--color-white);
 
-	--color-text-base: var(--color-neutral-900);
-	--color-text-accent: var(--color-text-base);
+	--color-text: var(--color-neutral-900);
+	--color-text-link: var(--color-text);
 
 	--color-border-subtle: var(--color-neutral-200);
-	--color-border-base: var(--color-neutral-300);
+	--color-border: var(--color-neutral-300);
 	--color-border-focus: var(--color-neutral-700);
 }

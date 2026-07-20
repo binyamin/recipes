@@ -4,8 +4,8 @@
  */
 
 body {
-	background-color: var(--color-bg-base);
-	color: var(--color-text-base);
+	background-color: var(--color-bg);
+	color: var(--color-text);
 	font-family: var(--font-family-body);
 	font-size: var(--font-size-m);
 }
@@ -46,7 +46,7 @@ p {
 }
 
 a {
-	color: var(--color-text-accent);
+	color: var(--color-text-link);
 
 	&:hover, &:focus-visible {
 		text-decoration: none;
