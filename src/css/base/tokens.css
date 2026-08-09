@@ -7,14 +7,14 @@
 :root {
 	--font-family-sans: ui-sans-serif, system-ui, sans-serif;
 
-	--font-size-xs: 0.75rem;
-	--font-size-s: 0.875rem;
+	--font-size-xs: 0.6944rem;
+	--font-size-s: 0.8333rem;
 	--font-size-m: 1rem;
-	--font-size-l: 1.125rem;
-	--font-size-xl: 1.25rem;
-	--font-size-2xl: 1.5rem;
-	--font-size-3xl: 1.875rem;
-	--font-size-4xl: 2.25rem;
+	--font-size-l: 1.2rem;
+	--font-size-xl: 1.44rem;
+	--font-size-2xl: 1.728rem;
+	--font-size-3xl: 2.0736rem;
+	--font-size-4xl: 2.4883rem;
 
 	/* Neutral colors from Tailwind CSS */
 	--color-neutral-50: oklch(98.5% 0 0);
