@@ -41,10 +41,10 @@
 	--space-2xl: 4rem;
 	--space-3xl: 6rem;
 
-	--radius-s: 0.125rem;
-	--radius-m: 0.25rem;
-	--radius-l: 0.5rem;
-	--radius-xl: 0.75rem;
+	--radius-s: 0.125em;
+	--radius-m: 0.25em;
+	--radius-l: 0.5em;
+	--radius-xl: 0.75em;
 
 	/* Very wide, use for dashboards/complex UIs */
 	--container-l: 80rem;
