@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { type RecipeInput } from '$lib/services/recipes/models';
 	import type { HTMLFormAttributes } from 'svelte/elements';
-	import ListControl from '../controls/List.svelte';
+	import FieldList from '../controls/FieldList.svelte';
 
 	interface Props extends HTMLFormAttributes {
 		/**
@@ -26,14 +26,14 @@
 		value={recipe?.title}
 	/>
 
-	<ListControl label="Ingredients" value={recipe?.ingredients}>
+	<FieldList label="Ingredients" value={recipe?.ingredients}>
 		{#snippet input(props, i)}
 			<label for={props.id} class="visually-hidden">Ingredient #{i + 1}</label>
 			<input {...props} name="ingredients" type="text" min="1" required />
 		{/snippet}
-	</ListControl>
+	</FieldList>
 
-	<ListControl label="Steps" value={recipe?.steps}>
+	<FieldList label="Steps" value={recipe?.steps}>
 		{#snippet input(props, i)}
 			<label for={props.id}>
 				<span class="visually-hidden">Step</span>
@@ -41,7 +41,7 @@
 			</label>
 			<input {...props} name="steps" type="text" required min="1" />
 		{/snippet}
-	</ListControl>
+	</FieldList>
 
 	<button type="submit">Save</button>
 </form>
