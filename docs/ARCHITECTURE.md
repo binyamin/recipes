@@ -33,9 +33,15 @@ reference it as you're poking around.
 
 We follow the [CUBE CSS](https://cube.fyi) methodology:
 
-- `css/base` contains global styles (e.g. CSS reset) and design tokens
-- `css/composition` contains layout primitives
-- `css/utility` houses helper classes, often to abstract repeated code
+- **Global CSS**: Global styles and design tokens. Located in `@kochav/css` or
+  `css/base`.
+- **Composition**: Flexible, component-agnostic layouts blocks. Located in
+  `@kochav/css`.
+- **Utility**: Helper classes, often to abstract repeated code. Located in
+  `@kochav/css` or `css/utility`.
+- **Blocks**: Once the above 3 layers are applied, a block contains any code
+  that only applies in a specific context (e.g. card, button). Located next to
+  corresponding Svelte components, or in `css/block`.
 
 ### 2.2 Routes
 
