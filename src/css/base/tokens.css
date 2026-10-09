@@ -5,17 +5,6 @@
  */
 
 :root {
-	--font-sans: ui-sans-serif, system-ui, sans-serif;
-
-	--size-xs: 0.75rem;
-	--size-sm: 0.875rem;
-	--size-base: 1rem;
-	--size-lg: 1.125rem;
-	--size-xl: 1.25rem;
-	--size-2xl: 1.5rem;
-	--size-3xl: 1.875rem;
-	--size-4xl: 2.25rem;
-
 	/* Neutral colors from Tailwind CSS */
 	--color-neutral-50: oklch(98.5% 0 0);
 	--color-neutral-100: oklch(97% 0 0);
@@ -31,27 +20,17 @@
 
 	--color-white: #fff;
 
-	--space-3xs: 0.25rem;
-	--space-2xs: 0.5rem;
-	--space-xs: 0.75rem;
-	--space-sm: 1rem;
-	--space-md: 1.5rem;
-	--space-lg: 2rem;
-	--space-xl: 3rem;
-	--space-2xl: 4rem;
-	--space-3xl: 6rem;
-
-	--radius-sm: 0.125rem;
-	--radius-md: 0.25rem;
-	--radius-lg: 0.5rem;
+	--radius-s: 0.125rem;
+	--radius-m: 0.25rem;
+	--radius-l: 0.5rem;
 	--radius-xl: 0.75rem;
 
 	/* Very wide, use for dashboards/complex UIs */
-	--container-lg: 80rem;
+	--container-l: 80rem;
 	/* general layouts */
-	--container-md: 60rem;
+	--container-m: 60rem;
 	/* text-heavy content, prose, articles */
-	--container-sm: 65ch;
+	--container-s: 65ch;
 	/* narrow forms, modals */
 	--container-xs: 45ch;
 }

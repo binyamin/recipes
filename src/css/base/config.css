@@ -5,17 +5,14 @@
  */
 
 :root {
-	--font-body: var(--font-sans);
-	--font-display: var(--font-sans);
+	--surface: var(--color-white);
+	--surface-raised: var(--color-white);
+	--surface-lowered: var(--color-neutral-100);
 
-	--color-surface-base: var(--color-white);
-	--color-surface-raised: var(--color-white);
-	--color-surface-lowered: var(--color-neutral-100);
+	--text: var(--color-neutral-900);
+	--text-accent: var(--text);
 
-	--color-text-base: var(--color-neutral-900);
-	--color-text-link: var(--color-text-base);
-
-	--color-border-subtle: var(--color-neutral-200);
-	--color-border-base: var(--color-neutral-300);
-	--color-border-focus: var(--color-neutral-700);
+	--border-subtle: var(--color-neutral-200);
+	--border: var(--color-neutral-300);
+	--border-focus: var(--color-neutral-700);
 }

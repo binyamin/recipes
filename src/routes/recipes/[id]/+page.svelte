@@ -40,7 +40,7 @@
 	<!-- missing state -->
 {:else}
 	<article>
-		<h1 class="text-title">{recipe.title}</h1>
+		<h1>{recipe.title}</h1>
 
 		<a href="/recipes/{params.id}/edit">edit</a>
 		<button type="button" onclick={onDelete}>Delete</button>
@@ -56,14 +56,14 @@
 			</time>
 		</p>
 
-		<h2 class="text-heading">Ingredients</h2>
+		<h2>Ingredients</h2>
 		<ul>
 			{#each recipe.ingredients as item}
 				<li>{item}</li>
 			{/each}
 		</ul>
 
-		<h2 class="text-heading">Steps</h2>
+		<h2>Steps</h2>
 		<ol>
 			{#each recipe.steps as step}
 				<li>{step}</li>

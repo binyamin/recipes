@@ -7,7 +7,7 @@
  */
 
 .region {
-	padding-block: var(--region-space, var(--space-sm));
+	padding-block: var(--region-space, var(--space-s));
 
 	> * {
 		--region-space: initial;

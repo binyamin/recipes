@@ -17,6 +17,7 @@
 	},
 	"devDependencies": {
 		"@iconify-json/lucide": "^1.2.112",
+		"@kochav/css": "gitlab:binyamin/kochav-css#semver:v1.0.0",
 		"@sveltejs/adapter-auto": "^7.0.1",
 		"@sveltejs/kit": "^2.65.1",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",

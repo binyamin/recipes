@@ -15,6 +15,9 @@ importers:
       '@iconify-json/lucide':
         specifier: ^1.2.112
         version: 1.2.141
+      '@kochav/css':
+        specifier: gitlab:binyamin/kochav-css#semver:v1.0.0
+        version: https://gitlab.com/binyamin/kochav-css/-/archive/c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1/kochav-css-c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1.tar.gz
       '@sveltejs/adapter-auto':
         specifier: ^7.0.1
         version: 7.0.1(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2)(vite@8.3.4(@types/node@25.9.9)))(svelte@5.57.2)(typescript@6.0.3)(vite@8.3.4(@types/node@25.9.9)))
@@ -140,6 +143,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@kochav/css@https://gitlab.com/binyamin/kochav-css/-/archive/c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1/kochav-css-c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1.tar.gz':
+    resolution: {gitHosted: true, integrity: sha512-+jyMS9O3jWP0+YumconXhR3P7EWewc5T3CJHbeMt8J0d60AW+01lRaHElY2sC3SUxDIQrcruamS///eH+CxRQQ==, tarball: https://gitlab.com/binyamin/kochav-css/-/archive/c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1/kochav-css-c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1.tar.gz}
+    version: 1.0.0
 
   '@oxc-project/types@0.153.0':
     resolution: {integrity: sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw==}
@@ -727,6 +734,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
+
+  '@kochav/css@https://gitlab.com/binyamin/kochav-css/-/archive/c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1/kochav-css-c2ddbf6e2d12a7d3f7ce009d22ade0d8b2fba7e1.tar.gz': {}
 
   '@oxc-project/types@0.153.0': {}
 
