@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../css/main.css';
 	import { SITE_NAME } from '$lib';
-	import IconPlus from '~icons/lucide/plus';
 
 	let { children } = $props();
 </script>
@@ -10,19 +9,26 @@
 	<title>{SITE_NAME}</title>
 </svelte:head>
 
-<div class="container">
-	<header>
-		<nav class="repel | region">
-			<a href="/" class="logo">{SITE_NAME}</a>
+<style>
+	.logo {
+		color: currentColor;
+		font-weight: 700;
+		text-decoration: none;
 
-			<a
-				href="/recipes/new"
-				class="button | cluster"
-				style:--cluster-valign="center"
-				style:--cluster-gap="var(--space-3xs)"
-				data-button-variant="secondary"
-			><IconPlus /> New Recipe</a>
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+</style>
+
+<div class="cover | container py-s">
+	<header>
+		<nav class="repel">
+			<a href="/" class="logo">{SITE_NAME}</a>
 		</nav>
 	</header>
-	<main class="region">{@render children()}</main>
+	<main data-grow>{@render children()}</main>
+	<footer class="center">
+		<p>A project by <a href="https://binyam.in">Binyamin Green</a></p>
+	</footer>
 </div>

@@ -3,8 +3,8 @@
  * A high-level content wrapper
  *
  * Config:
- * --container-max-width (container-sm) Constrains container width
- * --container-space (space-md) Defines the horizontal gutters
+ * --container-max-width (container-s) Constrains container width
+ * --container-space (space-m) Defines the horizontal gutters
  */
 
 .container {
