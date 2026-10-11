@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { type RecipeInput } from '$lib/services/recipes/models';
+	import { type RecipeInput } from '$lib/features/recipes/schema';
+	import FieldList from '$lib/ui/patterns/FieldList.svelte';
 	import type { HTMLFormAttributes } from 'svelte/elements';
-	import FieldList from '../controls/FieldList.svelte';
 
 	interface Props extends HTMLFormAttributes {
 		/**

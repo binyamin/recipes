@@ -12,12 +12,11 @@ This section talks briefly about various important files & directories.
 ├── src/
 │   ├── lib/              # Components & logic
 │   │   ├── ui/           # Generic UI components
-│   │   └── services/     # Domain-specific logic
+│   │   ├── features/     # Domain-specific logic & components
+│   │   └── utils/        # generic helpers
 │   │
 │   ├── css/              # Stylesheets
-│   │
 │   ├── routes/           # Pages & data loaders
-│   │
 │   └── app.html          # HTML template
 │
 ├── package.json
@@ -84,7 +83,7 @@ lib/ui/button.svelte
 routes/header.svelte
 ```
 
-### 2.4 Services
+### 2.4 Features
 
 This folder keeps logic out of UI. It's split into folders based on domain.
 Inside the folders, each file has a single responsibility.

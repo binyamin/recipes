@@ -1,5 +1,5 @@
 import z from 'zod';
-import { type Recipe, recipe } from './models';
+import { type Recipe, recipe } from './schema';
 import seed from './seed.json' with { type: 'json' };
 
 const STORAGE_KEY = 'recipes';

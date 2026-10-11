@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { list, remove } from '$lib/services/recipes/state.svelte';
+	import { list, remove } from '$lib/features/recipes/state.svelte';
 	import type { PageProps } from './$types';
 
 	let { params }: PageProps = $props();

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { list, update } from '$lib/services/recipes/state.svelte';
-	import RecipeForm from '$lib/ui/recipes/Form.svelte';
+	import RecipeForm from '$lib/features/recipes/components/Form.svelte';
+	import { list, update } from '$lib/features/recipes/state.svelte';
 	import type { HTMLFormAttributes } from 'svelte/elements';
 	import type { PageProps } from './$types';
 

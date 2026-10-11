@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { create } from '$lib/services/recipes/state.svelte';
-	import RecipeForm from '$lib/ui/recipes/Form.svelte';
+	import RecipeForm from '$lib/features/recipes/components/Form.svelte';
+	import { create } from '$lib/features/recipes/state.svelte';
 	import type { HTMLFormAttributes } from 'svelte/elements';
 
 	const onsubmit: HTMLFormAttributes['on:submit'] = (e) => {

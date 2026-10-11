@@ -1,4 +1,4 @@
-import { type Recipe, recipe, type RecipeInput, recipeInput } from './models';
+import { type Recipe, recipe, type RecipeInput, recipeInput } from './schema';
 import { load, save } from './storage';
 
 /**
