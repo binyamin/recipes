@@ -1,24 +1,32 @@
 /**
- * DESIGN TOKENS
- *
- * These are the "source of truth" for design decisions.
+ * Primitive design Tokens
+ * Colors by Claude Sonnet 5.5
  */
 
 :root {
-	/* Neutral colors from Tailwind CSS */
-	--color-neutral-50: oklch(98.5% 0 0);
-	--color-neutral-100: oklch(97% 0 0);
-	--color-neutral-200: oklch(92.2% 0 0);
-	--color-neutral-300: oklch(87% 0 0);
-	--color-neutral-400: oklch(70.8% 0 0);
-	--color-neutral-500: oklch(55.6% 0 0);
-	--color-neutral-600: oklch(43.9% 0 0);
-	--color-neutral-700: oklch(37.1% 0 0);
-	--color-neutral-800: oklch(26.9% 0 0);
-	--color-neutral-900: oklch(20.5% 0 0);
-	--color-neutral-950: oklch(14.5% 0 0);
+	/* neutral (warm paper → charcoal) */
+	--color-neutral-50: oklch(98.5% 0.008 83);
+	--color-neutral-100: oklch(96% 0.012 83);
+	--color-neutral-200: oklch(92% 0.010 83);
+	--color-neutral-300: oklch(87% 0.020 83);
+	--color-neutral-400: oklch(70% 0.012 83);
+	--color-neutral-600: oklch(48% 0.015 83);
+	--color-neutral-700: oklch(36% 0.015 83);
+	--color-neutral-800: oklch(26% 0.010 83);
+	--color-neutral-900: oklch(22% 0.010 83);
+	--color-neutral-950: oklch(20% 0.010 83);
 
-	--color-white: #fff;
+	/* copper (accent) */
+	--color-copper-300: oklch(72% 0.12 45);
+	--color-copper-600: oklch(52% 0.12 45);
+
+	/* herb (secondary: tags, success) */
+	--color-herb-300: oklch(72% 0.08 140);
+	--color-herb-600: oklch(45% 0.07 140);
+
+	/* red (destructive) */
+	--color-red-300: oklch(70% 0.15 28);
+	--color-red-600: oklch(50% 0.16 28);
 
 	--radius-s: 0.125rem;
 	--radius-m: 0.25rem;
@@ -33,4 +41,13 @@
 	--container-s: 65ch;
 	/* narrow forms, modals */
 	--container-xs: 45ch;
+
+	--font-serif:
+		'Source Serif 4',
+		Charter,
+		'Bitstream Charter',
+		'Sitka Text',
+		Cambria,
+		serif;
+	--font-sans: ui-sans-serif, system-ui, sans-serif;
 }

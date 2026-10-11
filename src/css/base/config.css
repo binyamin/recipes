@@ -1,18 +1,32 @@
 /**
- * CONFIG
- *
  * Semantic design tokens
  */
 
 :root {
-	--surface: var(--color-white);
-	--surface-raised: var(--color-white);
-	--surface-lowered: var(--color-neutral-100);
+	--page: var(--color-neutral-100);
+	--surface: var(--color-neutral-50);
 
-	--text: var(--color-neutral-900);
-	--text-accent: var(--text);
+	--text: var(--color-neutral-800);
+	--text--muted: var(--color-neutral-600);
+	--text-accent: var(--color-copper-600);
+	--text-on-fill: var(--color-neutral-50);
 
-	--border-subtle: var(--color-neutral-200);
 	--border: var(--color-neutral-300);
-	--border-focus: var(--color-neutral-700);
+	--border-accent: var(--color-copper-600);
+
+	--font-body: var(--font-serif);
+	--font-display: var(--font-serif);
+	--font-labels: var(--font-sans);
+
+	/* Set @kochav/css vars */
+	--font-family-body: var(--font-body);
+	--font-family-display: var(--font-display);
+}
+
+body {
+	background-color: var(--page);
+}
+
+:focus-visible {
+	--outline-color: var(--border-accent);
 }
