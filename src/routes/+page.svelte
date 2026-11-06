@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { list } from '$lib/features/recipes/state.svelte';
 
-	// prioritize recently updated recipes
-	let sorted = $derived(list.toSorted((a, b) => +b.updatedAt - +a.updatedAt));
+	let sorted = $derived(
+		list.toSorted((a, b) => a.title.localeCompare(b.title)),
+	);
 </script>
 
 <h1>Recipes</h1>
